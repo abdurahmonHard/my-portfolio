@@ -1,0 +1,65 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  color: $global-color-primary;
+  font-family: $font-family-roboto-mono, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: $background-color-primary;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+$mobile1: 420px;
+$mobile2: 850px;
+$tablet: 990px;
+
+@mixin nokia {
+  @media (max-width: #{$mobile1}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile2}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 6px #000;
+  background: #434343;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 10px;
+
+  // outline: 1px solid slategrey;
+}

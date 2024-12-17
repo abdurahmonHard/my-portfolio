@@ -1,0 +1,10 @@
+.global-container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .global-container {
+    width: 90%;
+  }
+}

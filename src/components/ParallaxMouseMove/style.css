@@ -1,0 +1,21 @@
+/* O'zgartirilgan CSS kodlari */
+.parallax-container {
+  width: 100%; /* Container elementining to'liq ekranga egilishi uchun */
+  height: 60%; /* Container elementining balandligi */
+  overflow: hidden; /* Qoldiq elementlarni yashirish uchun */
+  position: relative; /* Elementlarni butunlay joylashtirish uchun */
+}
+
+.parallax-element {
+  width: 100%; /* Elementning to'liq ekranga egilishi uchun */
+  height: 100%; /* Elementning to'liq ekranga egilishi uchun */
+  /* background-image: url("./../../src/assets/img/mockups/teduSvg.svg"); Elementning foni, kerakli rasmingizni yo'llashga o'zgartiring */
+  background-size: cover; /* Rasmni o'zgarishsiz to'g'ri o'lchamlarda ko'rsatish */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  position: absolute; /* Elementni butunlay joylashtirish uchun */
+  top: 0; /* Elementni yuqoridan joylashtirish uchun */
+  left: 0; /* Elementni chapdan joylashtirish uchun */
+  transform: translate(0, 0); /* Elementni koordinatalarni o'zgartirish uchun */
+  transition: transform 0.3s ease-out; /* Elementni o'zgarishlari orqali animatsiyalash uchun */
+}

@@ -1,0 +1,179 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/global.scss";
+
+.contact {
+  width: 100%;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  position: relative;
+  background: url(../../../assets/img/home-cover.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: $global-color-primary;
+
+  &_content {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+    // margin-left: 30%;
+    // padding-top: 7.5%;
+
+    h3 {
+      font-size: 48px;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 1px 3px 11px rgb(0 0 0 / 30%);
+      color: $global-color-secondary;
+      font-family: $font-family-popins, sans-serif;
+      word-wrap: break-word;
+      margin-bottom: 60px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        font-size: 24px;
+        text-align: center;
+
+        i {
+          font-size: 32px;
+          color: $global-color-secondary;
+        }
+
+        a {
+          font-size: 24px;
+          color: $global-color-primary;
+        }
+      }
+
+      .social_networks {
+        margin-top: 30px;
+        flex-direction: row;
+        column-gap: 25px;
+
+        li {
+          a {
+            i {
+              font-size: 36px;
+              color: $global-color-primary;
+              transition: all 0.2s ease;
+              cursor: pointer;
+
+              &:hover {
+                color: $global-color-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .contact {
+    background-size: cover;
+
+    &_content {
+      h3 {
+        font-size: 42px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    background-position: left 50%;
+
+    &_content {
+      transform: translate(-50%, -50%);
+
+      ul {
+        width: 85vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .contact {
+    &_content {
+      h3 {
+        font-size: 36px;
+      }
+      ul {
+        row-gap: 15px;
+
+        li {
+          font-size: 20px;
+
+          i {
+            font-size: 26px;
+          }
+
+          a {
+            font-size: 20px;
+          }
+        }
+
+        .social_networks {
+          li {
+            a {
+              i {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .contact {
+    &_content {
+      h3 {
+        font-size: 28px;
+      }
+      ul {
+        // row-gap: 15px;
+
+        li {
+          font-size: 16px;
+
+          i {
+            font-size: 22px;
+          }
+
+          a {
+            font-size: 16px;
+          }
+        }
+
+        .social_networks {
+          li {
+            a {
+              i {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
