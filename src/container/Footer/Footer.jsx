@@ -24,7 +24,7 @@ export default function Footer() {
             <Zoom duration={2000} cascade>
               <ul className="footer-dates">
                 <li>
-                  <a href="mailto:undigitals@gmail.com">
+                  <a href="mailto:coderusmonov@gmail.com">
                     Email: coderusmonov@gmail.com{" "}
                   </a>
                 </li>

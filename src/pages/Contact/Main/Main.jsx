@@ -14,20 +14,20 @@ export default function Main() {
             <ul>
               <li>
                 <i className="bx bx-envelope"></i>
-                <a href="mailto:undigitals@gmail.com">undigitals@gmail.com</a>
+                <a href="mailto:coderusmonov@gmail.com">coderusmonov@gmail.com</a>
               </li>
               <li>
                 <i className="bx bx-phone"></i>
-                Phone: +998 (99) 398 24 42
+                Phone: +998 (99) 399 36 67
               </li>
               <li>
                 <i className="bx bx-home"></i>
-                Address: Termiz, Uzbekistan
+                Address: Namangan, Uzbekistan
               </li>
               <Fade bottom duration={1000}>
                 <ul className="social_networks">
                   <li>
-                    <a href="https://www.linkedin.com/in/umid-negmatullayev-8279b9148/">
+                    <a href="https://www.linkedin.com/in/abdurahmondev">
                       <i className="bx bxl-linkedin"></i>
                     </a>
                   </li>
@@ -38,7 +38,7 @@ export default function Main() {
                 </a>
               </li> */}
                   <li>
-                    <a href="https://youtube.com/@umidnegmatullayev3318">
+                    <a href="#">
                       <i className="bx bxl-youtube"></i>
                     </a>
                   </li>
@@ -48,12 +48,12 @@ export default function Main() {
                 </a>
               </li> */}
                   <li>
-                    <a href="https://github.com/undigitals">
+                    <a href="https://github.com/abdurahmonHard">
                       <i class="bx bxl-github"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/undigitals">
+                    <a href="#">
                       <i className="bx bxl-twitter"></i>
                     </a>
                   </li>
